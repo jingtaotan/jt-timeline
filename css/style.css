@@ -1,0 +1,49 @@
+html {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul.timeline {
+  list-style: none;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  border-top: 4px solid black;
+  position: relative;
+  font-size: 3em;
+}
+
+ul.timeline li {
+  float: right;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  padding: 0;
+  border-radius: 50% 50% 50% 0;
+  text-align: center;
+  background-color: red;
+  color: white;
+  position: absolute;
+  top: -3em;
+  left: 0;
+  border: 2px solid white;
+  box-shadow: 0 0 5px grey;
+  opacity: 0.5;
+}
+
+ul.timeline li.alt {
+  background-color: orange;
+  top: 0.6em;
+  border-radius: 50% 0 50% 50%;
+}
+
+ul.timeline li:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+ul.timeline li.k-state-selected {
+  opacity: 1.0;
+}
+
+ul.timeline.layout-done li {
+  transform: rotate(-45deg);
+}
