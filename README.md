@@ -1,13 +1,18 @@
-Horizontal Timeline
+JT Timeline
 =========
 
-An easy to customize, horizontal timeline powered by CSS and jQuery.
+A horizontal timeline which:
+* Displays items sorted by date/time
+* Allows two categories to be shown above and below the timeline
+* Calculates the gap between two items (linearly, will make it logarithmic later), with a minimum distance to ensure items are still clickable despite being super close. Conversely, this means that the timeline is not to scale.
 
-*** Notes: Look at the sample index.html, I have modified and added some new classes to supports two events with different classes
-All credits go to the link below, for further explanation on how to calculate the distance, read the main.js file and look for var 'eventsMinDistance'
+The text size/width of the items are calculated using em's, so it is easy to set the text-size of the parent element to any size, and the child elements of the timeline will resize accordingly.
 
-[Article on CodyHouse](http://codyhouse.co/gem/horizontal-timeline/)
+**TODO:** make the timeline:
+* scrollable
+* pannable
+* zoomable
+* filterable (turn on/off categories)
+* search by date range
 
-[Demo](https://codyhouse.co/demo/horizontal-timeline/index.html)
- 
-[Terms](http://codyhouse.co/terms/)
+Thanks to Kelvin for inspiration.
